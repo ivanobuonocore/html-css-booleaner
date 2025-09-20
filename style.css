@@ -1,0 +1,27 @@
+header {
+background-image: url(./img/pattern.png);
+background-color: rgb(46, 46, 97);
+width: auto;
+}
+
+#logo {
+width: auto;
+height: 80px;
+}
+
+body {
+align-content: center;
+margin: 50px;
+}
+
+.testo-grigio {
+color: gray;    
+}
+
+#autore {
+color: blue;
+}
+
+#testo-piccolo {
+font size: 5px;
+}
