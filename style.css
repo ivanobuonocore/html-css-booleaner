@@ -1,141 +1,147 @@
-header {
-background-image: url(./img/pattern.png);
-background-color: rgb(46, 46, 97);
-width: 100%;
-margin: 0px;
-padding: 0;      /* se sivuole anche eliminare eventuale padding */
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 { 
-font-size: 36px;
-font-weight: bold;
+/* Header full-width */
+header {
+    background-image: url(./img/pattern.png);
+    background-color: rgb(46, 46, 97);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
 #logo {
-width: auto;
-height: 80px;
+    width: auto;
+    height: 80px;
 }
 
+/* Titolo */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Corpo principale*/
 body {
-align-content: center;
-margin: 0;
-pudding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-margin: 100px;
-margin-top: 0%;
-
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
 }
 
-.testo-grigio {
-color: gray;    
-}
-
-#autore {
-color: blue;
-}
-
-#testo-piccolo {
-font size: 5px;
-}
-
-
-.titolo-finale {
-color: grey;
-}
-
-.img-box-1 {
-  position: relative;    /* il contenitore diventa il riferimento */
-  display: inline-block;
-}
-
-.img-box-1 img {
-  display: block;
-  width: 90%;
-  height: auto;
-}
-
-.img-box-1 .testo-1 {
-  position: absolute;
-  top: 11%;              /* metà verticale */
-  left: 50%;             /* metà orizzontale */
-  transform: translate(-50%, -50%); /* centra  */
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-  width: 90%;
-}
-
-
-.img-box-2 .testo-2 {
-position: absolute;
-top: 11%;
- left: 50%;             /* metà orizzontale */
-  transform: translate(-50%, -50%); /* centra  */
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-.img-box-2 {
-  position: relative;    /* il contenitore diventa il riferimento */
-  display: inline-block;
-}
-
-.img-box-2 img {
-  display: block;
-  width: 90%;
-  height: auto;
-}
-
-
-th {
-color: rgb(233, 230, 230);          /* titoli colonne- tabella*/
-background-color: rgb(86, 86, 228);
-white-space: nowrap;
-padding-left: 10px;
-padding-right: 10px;
-vertical-align: top;
-}
-
-tr { 
-background-color: #cecff5;           
-;
-  }  
-
-  tbody tr:nth-child(odd) {             /* righe dispari */
-  background-color: #aeb8e0;
-}
-
-tbody tr:nth-child(even) {              /* righe pari */
-  background-color: #877ec6;
-}
-
-
-h3 { 
-margin-bottom: 5px;
-  }  
-
-table {
-border-collapse: collapse;
-  }
-
-td {
-padding-left: 10px;
-padding-right: 10px;
-vertical-align: top;
+/* Paragrafi e testo*/
+p {
+    margin-bottom: 10px;
 }
 
 p + p {
-margin-top: -1%;       /* margine solo tra paragrafi consecutivi */
+    margin-top: 5px; /* spazio ridotto tra paragrafi consecutivi */
 }
 
-ul { 
-padding: 1%;
+.testo-grigio {
+    color: gray;
 }
+
+#autore {
+    color: blue;
+}
+
+#testo-piccolo {
+    font-size: 12px;
+}
+
+.titolo-finale {
+    color: grey;
+}
+
+/* Liste*/
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Tabelle*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th {
+    color: rgb(233, 230, 230);
+    background-color: rgb(86, 86, 228);
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #aeb8e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #877ec6;
+}
+
+/* Immagini con testo sovrapposto*/
+.img-box-1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.img-box-2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.img-box-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-box-2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.img-box-1 .testo-1 {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+.img-box-2 .testo-2 {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    width: 100%;
+    }
